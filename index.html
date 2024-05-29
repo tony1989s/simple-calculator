@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolatrice semplice</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scritpt.js" defer></script>
+</head>
+<body>
+    <h1>Calcolatrice semplice</h1>
+    <p>Inserisci due numeri e seleziona un'operazione</p>
+    <!-- Creare 2 campi di input per inserire i numeri -->
+    <form id="calcolatriceForm">
+        <label for="numero1">Numero 1:</label>
+        <input type="number" id="numero1" name="numero1"><br><br>
+
+
+        <label for="numero2">Numero 2:</label>
+        <input type="number" id="numero2" name="numero2"><br><br>
+
+        <!-- Creazione menu a tendina per selezionare l'operazione da eseguire(somma,sottrazione, moltiplicazione, divisione) -->
+        <label for="operazione">Operazione:</label>
+        <select name="operazione" id="operazione">
+            <option value="somma">Somma</option>
+            <option value="sottrazione">Sottrazione</option>
+            <option value="moltiplicazione">Moltiplicazione</option>
+            <option value="divisione">Divisione</option>
+        </select><br><br>
+
+        <!-- Creazione di un pulsante per eseguire il calcolo -->
+        <input type="button" value="calcola" onclick="calcola()">
+    </form>
+    <!-- L'area dove visualizzare il risultato -->
+    <h2 id="risultato"></h2>
+</body>
+</html>
